@@ -6,7 +6,7 @@
 	"private": true,
 	"license": "",
 	"type": "module",
-	"homepage": "https://andreyshakun.github.io/zlatmax",
+	"homepage": "https://andreyshakun/github.io/zlatmax",
 	"scripts": {
 		"start": "npm i --legacy-peer-deps",
 		"dev": "gulp && webpack serve --progress -c config/webpack.dev.js",
@@ -73,6 +73,7 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
+		"gh-pages": "^4.0.0",
 		"simplebar": "latest"
 	}
 }
