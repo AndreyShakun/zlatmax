@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.htm',{ "title":"Карточка товара" })
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.htm',{})
+            <main class="page page__inner">
+                <div class="page__header">
+                    <div class="page__container">
+                        <nav class="page__breadcrumbs breadcrumbs">
+                            <ul class="breadcrumbs__list">
+                                <li class="breadcrumbs_item">
+                                    <a href="" class="breadcrumbs__link">Главная</a>
+                                </li>
+                                <li class="breadcrumbs_item">
+                                    <a href="" class="breadcrumbs__link">Разделочные ножи</a>
+                                </li>
+                                <li class="breadcrumbs_item">
+                                    <span class="breadcrumbs__current">Нож Снегирь</span>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product__container">
+                        <div class="product__main main-product">
+
+                            <div class="main-product__images images-product">
+                                <div class="images-product__slider swiper">
+                                    <div class="images-product__wrapper swiper-wrapper">
+                                        <div class="images-product__slide-ibg swiper-slide">
+                                            <img src="@img/products/01.jpg" alt="Нож Снегирь">
+                                        </div>
+                                        <div class="images-product__slide-ibg swiper-slide">
+                                            <img src="@img/products/02.jpg" alt="Нож Снегирь">
+                                        </div>
+                                        <div class="images-product__slide-ibg swiper-slide">
+                                            <img src="@img/products/03.jpg" alt="Нож Снегирь">
+                                        </div>
+                                        <div class="images-product__slide-ibg swiper-slide">
+                                            <img src="@img/products/04.jpg" alt="Нож Снегирь">
+                                        </div>
+                                        <div class="images-product__slide-ibg swiper-slide">
+                                            <img src="@img/products/05.jpg" alt="Нож Снегирь">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="images-product__thumbs thumbs-images swiper">
+                                    <div class="thumbs-images__swiper swiper-wrapper">
+                                        <div class="thumbs-images__slide-ibg swiper-slide">
+                                            <img src="@img/products/01.jpg" alt="Нож Снегирь">
+                                        </div>
+                                        <div class="thumbs-images__slide-ibg swiper-slide">
+                                            <img src="@img/products/02.jpg" alt="Нож Снегирь">
+                                        </div>
+                                        <div class="thumbs-images__slide-ibg swiper-slide">
+                                            <img src="@img/products/03.jpg" alt="Нож Снегирь">
+                                        </div>
+                                        <div class="thumbs-images__slide-ibg swiper-slide">
+                                            <img src="@img/products/04.jpg" alt="Нож Снегирь">
+                                        </div>
+                                        <div class="thumbs-images__slide-ibg swiper-slide">
+                                            <img src="@img/products/05.jpg" alt="Нож Снегирь">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-product__body body-product">
+
+                                <div class="body-product__header header-product">
+
+                                    <div class="header-product__line">
+                                        <h1 class="header-product__title">Нож Снегирь</h1>
+                                        <a href="" class="header-product__link _icon-compare"></a>
+                                        <a href="" class="header-product__link _icon-favorit"></a>
+                                    </div>
+
+                                    <div class="header-product__rating rating rating_set">
+                                        <div class="rating__body">
+                                            <div class="rating__active"></div>
+                                            <div class="rating__items">
+                                                <input type="radio" class="rating__item" value="1" name="rating" />
+                                                <input type="radio" class="rating__item" value="2" name="rating" />
+                                                <input type="radio" class="rating__item" value="3" name="rating" />
+                                                <input type="radio" class="rating__item" value="4" name="rating" />
+                                                <input type="radio" class="rating__item" value="5" name="rating" />
+                                            </div>
+                                        </div>
+                                        <div class="rating__value">4.5</div>
+                                    </div>
+                                    <div data-availability="yes" class="header-product__availability"></div>
+                                    <!-- <div data-availability="no" class="header-product__availability"></div> -->
+                                </div>
+
+                                <div class="body-product__table table-product">
+                                    <div class="table-product__label">Артикул</div>
+                                    <div class="table-product__value">AF0000001952</div>
+                                    <div class="table-product__label">Торговая марка:</div>
+                                    <div class="table-product__value">WUESTHOF (Германия)</div>
+                                    <div class="table-product__label">Серия:</div>
+                                    <div class="table-product__value">Ножи серии Classic Ikon</div>
+                                    <div class="table-product__label">Бонусные баллы:</div>
+                                    <div class="table-product__value">38</div>
+                                </div>
+
+                                <div class="body-product__options options-product">
+                                    <div class="options-product__label">Сталь</div>
+                                    <div class="options-product__value">
+                                        <select name="form[]" data-class-modif="options-product">
+                                            <option disabled selected>Выбрать сталь</option>
+                                            <option value="1">100Х13М</option>
+                                            <option value="2">AUS-8</option>
+                                            <option value="3">Дамаск</option>
+                                            <option value="4">К340</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="options-product__label">Гарда и тыльник</div>
+                                    <div class="options-product__value">
+                                        <select name="form[]" data-class-modif="options-product">
+                                            <option disabled selected>Выбрать гарду и тыльник</option>
+                                            <option value="1">Алюминий</option>
+                                            <option value="2">Металлический</option>
+                                            <option value="3">Текстолит</option>
+                                            <option value="4">Комбинированная</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="options-product__label">Обработка клинка</div>
+                                    <div class="options-product__value">
+                                        <select name="form[]" data-class-modif="options-product">
+                                            <option disabled selected>Выбрать обработку клинка</option>
+                                            <option value="1">Золочение клинка</option>
+                                            <option value="2">Золочение рисунка на клинке</option>
+                                        </select>
+                                    </div>
+                                    <div class="options-product__label">Рукоять</div>
+                                    <div class="options-product__value">
+                                        <select name="form[]" data-class-modif="options-product">
+                                            <option disabled selected>Выбрать рукоять</option>
+                                            <option value="1">Березовый кап</option>
+                                            <option value="2">Граб</option>
+                                            <option value="3">Дуб</option>
+                                            <option value="4">Комбинированная</option>
+                                        </select>
+                                    </div>
+                                </div>   
+                                
+                                <div class="body-product__actions actions-product">
+                                    <div class="actions-product__price">
+                                        <div class="price">3 865</div>
+                                        <div class="points">+ 449 баллов за покупку <button type="button"  data-tippy-content="Вам будут начислены баллы в размере 5% от стоимости покупки. Их можно будет использовать на оплату последующих заказов.">?</button></div>
+                                    </div>
+                                    <div class="actions-product__row">
+                                        <div data-quantity class="actions-product__quantity quantity">
+                                            <button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+                                            <div class="quantity__input">
+                                                <input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+                                            </div>
+                                            <button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+                                        </div>
+                                        <div class="actions-product__buttons">
+                                            <button class="actions-product__cart button"><span class="_icon-cart">В корзину</span></button>
+                                            <button class="actions-product__cart button button_black"><span>Купить в 1 клик</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__info product-info">
+                            <div data-tabs="991.98" class="product-info__block">
+                                <nav data-tabs-titles class="product-info__navigation">
+                                    <button type="button" class="product-info__title _tab-active">Описание</button>
+                                    <button type="button" class="product-info__title">Характеристика</button>
+                                    <button type="button" class="product-info__title">Отзывы</button>
+                                    <button type="button" class="product-info__title">Доставка</button>
+                                </nav>
+                                <div data-tabs-body class="product-info__content">
+                                    <div class="product-info__body">
+                                        <p>
+                                            Легкий удобный нож с клинком, имеющим пологие вогнутые линзовидные спуски на две трети ширины клинка, образующие тонкое, 
+                                            прекрасно режущее лезвие толщиной около 0,6 мм в районе подводов. 
+                                        </p>
+                                        <p>
+                                            Обух клинка со спинкой рукояти имеет одну плавную дугообразную линию. На пяте перед рукоятью есть подпальцевый вырез для точных работ. 
+                                        </p>
+                                        <p>
+                                            Необходимо проявлять некоторую осторожность при работе с большими боковыми нагрузками на лезвие ножа, ввиду небольшой толщины клинка 
+                                            в рабочей части. 
+                                        </p>
+                                        <p>
+                                            Монтаж рукояти накладной плашечный. На навершии рукояти, функцию которого выполняет выступающий из под плашек хвостовик, 
+                                            имеется отверстие под темляк. Этот нож удобный помощник при работе с продуктами и охоте на боровую и водоплавающую дичь.
+                                        </p>                                   
+                                    </div>
+                                    <div class="product-info__body">
+                                        <div class="product-info__character character">
+                                            <div class="character__body">
+                                                <h3 class="character__title">Технические характеристики</h3>
+                                                <div class="character__line">
+                                                    <div class="character__option">Общая длина, мм:</div>
+                                                    <div class="character__value">227</div>
+
+                                                    <div class="character__option">Длина клинка, мм:</div>
+                                                    <div class="character__value">112</div>
+
+                                                    <div class="character__option">Ширина клинка, мм:</div>
+                                                    <div class="character__value">24</div>
+                                                
+                                                    <div class="character__option">Толщина обуха, мм:</div>
+                                                    <div class="character__value">29</div>
+                                                </div>
+                                            </div>
+                                            <div class="character__body">
+                                                <h3 class="character__title">Используемые материалы</h3>
+                                                <div class="character__line">
+                                                    <div class="character__option">Сталь</div>
+                                                    <div class="character__value">95Х18</div>
+                                                </div>
+                                                <div class="character__line">
+                                                    <div class="character__option">Рукоять:</div>
+                                                    <div class="character__value">Накладки карельская береза</div>
+                                                </div>
+                                            </div>
+                                            <div class="character__body">
+                                                <h3 class="character__title">Производство</h3>
+                                                <div class="character__line">
+                                                    <div class="character__option">Производство</div>
+                                                    <div class="character__value">АиР</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info__body">
+                                        <div class="product-info__comments comments">
+                                            <div class="comments__item comment">
+                                                <div class="comment__body">
+                                                    <div class="comment__avatar">
+                                                        <img src="@img/users/user1.jpg" alt="UserName">
+                                                    </div>
+                                                    <div class="comment__block">
+                                                        <div class="comment__header">
+                                                            <div class="comment__user">Никита Панков</div>
+                                                            <div class="comment__date">29.06.2019</div>
+                                                        </div>                                                        
+                                                        <div class="comment__rating rating rating_set">
+                                                            <div class="rating__body">
+                                                                <div class="rating__active"></div>
+                                                                <div class="rating__items">
+                                                                    <input type="radio" class="rating__item" value="1" name="rating">
+                                                                    <input type="radio" class="rating__item" value="2" name="rating">
+                                                                    <input type="radio" class="rating__item" value="3" name="rating">
+                                                                    <input type="radio" class="rating__item" value="4" name="rating">
+                                                                    <input type="radio" class="rating__item" value="5" name="rating">
+                                                                </div>
+                                                            </div>
+                                                            <div class="rating__value">3.6</div>
+                                                        </div>  
+                                                        <div class="comment__text">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor luctus et consectetur augue. 
+                                                            Dolor egestas nunc pellentesque hac fringilla. Enim hac scelerisque eu tellus feugiat vel. 
+                                                            Ut ac nec eleifend fermentum dictum ullamcorper phasellus at sed.
+                                                        </div>
+                                                        <div class="comment__footer">
+                                                            <button class="comment__reply">Ответить</button>
+                                                            <div class="comment__favorite _icon-favorit"></div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comments__item comment">
+                                                <div class="comment__body">
+                                                    <div class="comment__avatar">
+                                                        <img src="@img/users/user2.jpg" alt="UserName">
+                                                    </div>
+                                                    <div class="comment__block">
+                                                        <div class="comment__header">
+                                                            <div class="comment__user">Cаша Осийчук</div>
+                                                            <div class="comment__date">29.06.2019</div>
+                                                        </div>                                                        
+                                                        <div class="comment__rating rating rating_set">
+                                                            <div class="rating__body">
+                                                                <div class="rating__active"></div>
+                                                                <div class="rating__items">
+                                                                    <input type="radio" class="rating__item" value="1" name="rating">
+                                                                    <input type="radio" class="rating__item" value="2" name="rating">
+                                                                    <input type="radio" class="rating__item" value="3" name="rating">
+                                                                    <input type="radio" class="rating__item" value="4" name="rating">
+                                                                    <input type="radio" class="rating__item" value="5" name="rating">
+                                                                </div>
+                                                            </div>
+                                                            <div class="rating__value">4.2</div>
+                                                        </div>  
+                                                        <div class="comment__text">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor luctus et consectetur augue. 
+                                                            Dolor egestas nunc pellentesque hac fringilla. Enim hac scelerisque eu tellus feugiat vel. 
+                                                            Ut ac nec eleifend fermentum dictum ullamcorper phasellus at sed.
+                                                        </div>
+                                                        <div class="comment__footer">
+                                                            <button class="comment__reply">Ответить</button>
+                                                            <div class="comment__favorite _icon-favorit"></div>
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info__body">
+                                       
+                                        <div class="product-info__delivery delivery">
+                                            <div class="delivery-country__label">Ваша страна</div>
+                                            <div class="delivery__value">
+                                                <select name="form[]" data-class-modif="delivery" id="country">
+                                                    <option value="" disabled>Выберите Вашу страну...</option>
+                                                    <option value="rus" selected>Россия</option>
+                                                    <option value="ua">Украина</option>
+                                                    <option value="blr">Белорусия</option>
+                                                    <option value="kaz">Казахстан</option>
+                                                </select>
+                                            </div>
+                                            <div class="delivery-city__label">Ваш город</div>
+                                            <div class="delivery-city__value">
+                                                <select name="form[]" data-class-modif="delivery" id="city">
+                                                    <option value=""  disabled selected data-country>Выберите Ваш город...</option>
+                                                    <option value="1" data-country="rus">Москва</option>
+                                                    <option value="2" data-country="rus">Санкт-Петербург</option>
+                                                    <option value="3" data-country="rus">Казань</option>
+                                                    <option value="4" data-country="ua">Киев</option>
+                                                    <option value="5" data-country="ua">Харьков</option>
+                                                    <option value="6" data-country="ua">Львов</option>
+                                                    <option value="7" data-country="blr">Минск</option>
+                                                    <option value="8" data-country="blr">Могилев</option>
+                                                    <option value="9" data-country="blr">Гомель</option>
+                                                    <option value="10" data-country="kaz">Нур-Султан</option>
+                                                    <option value="11" data-country="kaz">Караганда</option>
+                                                    <option value="12" data-country="kaz">Актобе</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="delivery__post post">
+                                            <div class="post__img">
+                                                <img src="@img/delivery/01.jpg" alt="Почта России">
+                                            </div>
+                                            <div class="post__title">Почта России</div>
+                                            <div class="post__time">5-8 дней</div>
+                                            <div class="post__price">300</div>
+                                        </div>
+                                        <div class="delivery__post post">
+                                            <div class="post__img">
+                                                <img src="@img/delivery/01.jpg" alt="Почта России">
+                                            </div>
+                                            <div class="post__title">Почта России</div>
+                                            <div class="post__time">5-8 дней</div>
+                                            <div class="post__price">300</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <section class="page__sale-products sale-products_no-top">
+                            @@include('html/_products-slider.htm',{
+                                "title":"Похожие товары",
+                                "more":""    
+                            })
+                        </section>
+
+                        <section class="page__sale-products sale-products_no-top">
+                            @@include('html/_products-slider.htm',{
+                                "title":"Рекомендуем",
+                                "more":"" 
+                            })
+                        </section>
+                    </div>
+                </div> 
+            </main>
+            @@include('html/_footer.htm',{})
+        </div>
+        @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+    </body>
+</html>
